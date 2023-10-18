@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imgs/batman-icon-png-10-removebg-preview.png" type="image/x-icon">
+    <title>Fale Conosco: Entre em Contato para Compartilhar Sua Paixão pelo Batman</title>
+  </head>
+  <script>
+    function validarFormulario() {
+        var email = document.getElementById("inputEmail3").value;
+        var nome = document.getElementById("inputNome").value;
+        var tel = document.getElementById("inputTelefone").value;
+
+        // Validação do campo de email
+        if (email === "") {
+            alert("O campo de e-mail não pode estar vazio.");
+            return false;
+        }
+
+        // Validação do campo de nome
+        if (nome === "") {
+            alert("O campo de nome não pode estar vazio.");
+            return false;
+        }
+        if (tel === "") {
+            alert("O campo de Telefone não pode estar vazio.");
+            return false;
+        }
+        alert("Formulário enviado com sucesso");
+        
+        return true;
+    }
+    
+</script>
+<style>
+  #exampleFormControlTextarea1{
+    resize: none;
+  }
+</style>
+  <body>
+    
+<!-- Só uma imagem -->
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">
+    <img src="imgs/batman-icon-png-10-removebg-preview.png" width="50" height="50" alt="">
+  </a>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="sobre.html">Sobre</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="galeria.html">Galeria</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contato.html">Contato</a>
+    </li>
+  </ul>
+</nav>
+
+<h1 align="center">Fale Conosco!</h1>
+<br>
+<form id="myForm" onsubmit="return validarFormulario()">
+  <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Ex: vitor2023@gmail.com">
+      </div>
+  </div>
+  <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Nome Completo</label>
+      <div class="col-sm-10">
+          <input class="form-control" id="inputNome" placeholder="Ex: Vitor Hugo Bonilio Dourado">
+      </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Telefone</label>
+    <div class="col-sm-10">
+        <input class="form-control" id="inputTelefone" placeholder="Ex: +55 (19) 99178-0634">
+    </div>
+</div>
+  <fieldset class="form-group">
+      <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Avalie nosso site</legend>
+          <div class="col-sm-10">
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="opcao1" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                      Muito Bom!
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="opcao2">
+                  <label class="form-check-label" for="gridRadios2">
+                      Razoável
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="opcao3">
+                  <label class="form-check-label" for="gridRadios3">
+                      Péssimo
+                  </label>
+              </div>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1" >Adicione um Comentário</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dúvida ou Sugestão..."></textarea>
+      </div>
+  </fieldset>
+  <div class="form-group row">
+  </div>
+  <div class="form-group row">
+      <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+  </div>
+</form>
+  <br><br><br><br><br><br><br><br><br><br>
+  <footer>
+    <a href="#"> <img class="ancor" src="imgs/arrow_upward_FILL0_wght400_GRAD0_opsz48.png" width="4%" align="right"/></a> </div>
+   <h5 align="center">Vitor Dourado 2023 - ©Todos os direitos reservados<br>
+ Trabalho acadêmico - Sem fins lucrativos</h5>
+ </footer>
